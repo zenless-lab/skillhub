@@ -31,8 +31,6 @@ Each skill retains core operational instructions in `SKILL.md` while deep-dive c
  ┣ 📂 .github/              # GitHub-specific configuration
  ┃  ┗ 📂 agents/            # Reusable agent definition files (.agent.md)
  ┣ 📂 skills/               # Core agent skills
- │  ┣ 📂 skill-crafter/
- │  ┣ 📂 agents-md-crafter/
  │  ┣ 📂 cloud-init-crafter/
 ...
 ```
@@ -43,13 +41,7 @@ Each skill retains core operational instructions in `SKILL.md` while deep-dive c
 
 | Domain & Skill | Description |
 | :--- | :--- |
-| **🤖 Agent Engineering** | |
-| 🪛 [`skill-crafter`](skills/skill-crafter) | Create, edit, evaluate, and optimize new Agent Skills efficiently. |
-| 📜 [`agents-md-crafter`](skills/agents-md-crafter) | Design and update standard AI agent instruction files like `AGENTS.md`. |
-| 📝 [`readme-crafter`](skills/readme-crafter) | Focused documentation agent for creating and revising `README.md` files. |
-| ✅ [`conventional-commits`](skills/conventional-commits) | Standardize git commit messages with Conventional Commits 1.0.0 and 50/72 rules. |
 | **🧰 Dev Environment & Automation** | |
-| 📦 [`devcontainer-creator`](skills/devcontainer-creator) | Create, edit, and update `.devcontainer/devcontainer.json` development environments. |
 | 🧩 [`devcontainer-feature-creator`](skills/devcontainer-feature-creator) | Create and maintain reusable Dev Container Features with install/test scaffolding. |
 | 🏗️ [`devcontainer-prebuild-image`](skills/devcontainer-prebuild-image) | Configure, build, and publish pre-built Dev Container images. |
 | 🧱 [`devcontainer-template-creator`](skills/devcontainer-template-creator) | Create and distribute Dev Container Templates with metadata and tests. |
@@ -59,15 +51,11 @@ Each skill retains core operational instructions in `SKILL.md` while deep-dive c
 | **🐍 Python Ecosystem** | |
 | 📏 [`python-standards`](skills/python-standards) | Apply Python coding standards (PEP 8, Google), infer project style, and manage references. |
 | ⚡ [`ruff-python-guide`](skills/ruff-python-guide) | Integrate, configure, and troubleshoot Ruff for Python linting and formatting. |
-| 📜 [`python-docstring-expert`](skills/python-docstring-expert) | Expert methodology for evaluating, formatting, and generating Python docstrings. |
-| 💬 [`python-comment-expert`](skills/python-comment-expert) | Expertise in writing, reviewing, and modifying Python logic code comments. |
-| 🇬 [`google-docstring-crafter`](skills/google-docstring-crafter) | Google Style Python Docstring expertise: modules, classes, functions, and formatting. |
 | 🔢 [`numpy-docstring-crafter`](skills/numpy-docstring-crafter) | NumPy Style Python Docstring expertise: scientific ecosystem, parameters, and returns. |
 | 📑 [`rst-docstring-crafter`](skills/rst-docstring-crafter) | Guidance for reStructuredText (reST), Python docstrings, and Sphinx projects. |
 | 🧪 [`noxfile-crafter`](skills/noxfile-crafter) | Create, edit, and modernize `noxfile.py` sessions for automation and CI workflows. |
 | **⚙️ DevOps & Security** | |
 | ☁️ [`cloud-init-crafter`](skills/cloud-init-crafter) | Create and validate cloud-init / user-data scripts for cloud instance provisioning. |
-| 🔒 [`secret-scanner`](skills/secret-scanner) | Perform security scans to detect edge cases, passwords, API tokens, and PII. |
 | 🏗️ [`starlark-expert`](skills/starlark-expert) | Consult and generate scripts written in Starlark (e.g. for Bazel, Buck, etc.). |
 | **🗂️ Data & Schemas** | |
 | 🏷️ [`proto-schema-expert`](skills/proto-schema-expert) | Draft, design, and clarify Protobuf schemas (Proto2/Proto3/Editions). |
@@ -109,8 +97,6 @@ Follow our standard directory topography when authoring new instructions:
 2. **`references/`**: Heavy documentation and rulesets. Read dynamically by agents only when needed.
 3. **`assets/`**: Executable templates, JSON schemas, or example configurations.
 4. **`scripts/`**: Helpers (e.g., Python validation scripts).
-
-> 💡 **Tip:** Refer to the `skill-crafter` to help generate your new skills!
 
 ---
 
