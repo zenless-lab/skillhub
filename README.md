@@ -77,6 +77,11 @@ This repository includes a robust **[Dev Container](https://containers.dev/)** c
 If developing locally:
 
 ```bash
+# Clone the repository and initialize submodules
+git clone --recurse-submodules https://github.com/zenless-lab/skillhub.git
+# Or, if you already cloned without submodules:
+git submodule update --init --recursive
+
 # Install pre-commit globally or in a virtualenv
 pip install pre-commit
 
