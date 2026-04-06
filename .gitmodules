@@ -1,0 +1,3 @@
+[submodule "3rdparty/common-skills"]
+	path = 3rdparty/common-skills
+	url = https://github.com/zenless-lab/skills.git
