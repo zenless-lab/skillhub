@@ -62,12 +62,12 @@ mkdir -p src
 ```
 
 Note: in this repo-local layout, `.chezmoiignore` patterns apply to *target* paths (for example `~/.config/chezmoi/chezmoi.yaml`), not to repository files like `./chezmoi.yaml` in the project root. The repo-local `chezmoi.yaml` shown above is not part of the source state and does not need to be ignored.
-
-
 
 
-Then run commands from the project root with the explicit config path, for example:
-
+
+
+Then run commands from the project root with the explicit config path, for example:
+
 ```sh
 mkdir -p ./src
 chezmoi --config ./chezmoi.yaml add ~/.zshrc

@@ -45,16 +45,20 @@ Each skill retains core operational instructions in `SKILL.md` while deep-dive c
 | 🧩 [`devcontainer-feature-creator`](skills/devcontainer-feature-creator) | Create and maintain reusable Dev Container Features with install/test scaffolding. |
 | 🏗️ [`devcontainer-prebuild-image`](skills/devcontainer-prebuild-image) | Configure, build, and publish pre-built Dev Container images. |
 | 🧱 [`devcontainer-template-creator`](skills/devcontainer-template-creator) | Create and distribute Dev Container Templates with metadata and tests. |
+| ⚙️ [`chezmoi-creator`](skills/chezmoi-creator) | Build and manage dotfile configurations across multiple systems with Chezmoi. |
 | **🧠 AI / Machine Learning** | |
 | 🚀 [`huggingface-accelerate-guide`](skills/huggingface-accelerate-guide) | Guide for Hugging Face Accelerate: distributed training, inference, large models. |
 | 📉 [`llm-training-guide`](skills/llm-training-guide) | Reference-first guide for strategy, VRAM estimation, alignment methods, and health metrics. |
 | **🐍 Python Ecosystem** | |
 | 📏 [`python-standards`](skills/python-standards) | Apply Python coding standards (PEP 8, Google), infer project style, and manage references. |
 | ⚡ [`ruff-python-guide`](skills/ruff-python-guide) | Integrate, configure, and troubleshoot Ruff for Python linting and formatting. |
+| 💬 [`python-comment-expert`](skills/python-comment-expert) | Expert guidance for writing clear, concise comments in Python code. |
+| 📖 [`python-docstring-expert`](skills/python-docstring-expert) | Methodology for evaluating, formatting, and generating Python docstrings. |
+| 📚 [`python-google-docstring-crafter`](skills/python-google-docstring-crafter) | Craft Python docstrings and comments following Google Python Style Guide. |
 | 🔢 [`numpy-docstring-crafter`](skills/numpy-docstring-crafter) | NumPy Style Python Docstring expertise: scientific ecosystem, parameters, and returns. |
 | 📑 [`rst-docstring-crafter`](skills/rst-docstring-crafter) | Guidance for reStructuredText (reST), Python docstrings, and Sphinx projects. |
 | 🧪 [`noxfile-crafter`](skills/noxfile-crafter) | Create, edit, and modernize `noxfile.py` sessions for automation and CI workflows. |
-| **⚙️ DevOps & Security** | |
+| **⚙️ DevOps & Infrastructure** | |
 | ☁️ [`cloud-init-crafter`](skills/cloud-init-crafter) | Create and validate cloud-init / user-data scripts for cloud instance provisioning. |
 | 🏗️ [`starlark-expert`](skills/starlark-expert) | Consult and generate scripts written in Starlark (e.g. for Bazel, Buck, etc.). |
 | **🗂️ Data & Schemas** | |
