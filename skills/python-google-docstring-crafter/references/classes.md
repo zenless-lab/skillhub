@@ -29,7 +29,7 @@ class SampleClass:
         """Initializes the instance with preferences.
 
         Args:
-          likes_spam: Defines if the instance exhibits this preference.
+            likes_spam: Defines if the instance exhibits this preference.
         """
         self.likes_spam = likes_spam
         self.eggs = 0
