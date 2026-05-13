@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "python-comment-expert": {
+      "source": "zenless-lab/skills",
+      "sourceType": "github",
+      "skillPath": "skills/python-comment-expert/SKILL.md",
+      "computedHash": "2c69dbee29b85856a0eceea0a7b580060553b74b688860163a8519ee16990aea"
+    },
+    "python-docstring-expert": {
+      "source": "zenless-lab/skills",
+      "sourceType": "github",
+      "skillPath": "skills/python-docstring-expert/SKILL.md",
+      "computedHash": "4e34609f5cc1cc700c247f84df9137fba58141d56f81f127d29ff474ba774fb3"
+    },
+    "python-google-docstring-crafter": {
+      "source": "zenless-lab/skills",
+      "sourceType": "github",
+      "skillPath": "skills/python-google-docstring-crafter/SKILL.md",
+      "computedHash": "1653dc39df164be0071a2f029f48bb93091b3fd7c2db305410cc48ba52855d91"
+    }
+  }
+}
