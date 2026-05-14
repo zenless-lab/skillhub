@@ -10,7 +10,7 @@
  *   node scripts/lint_markdown.mjs [file ...]    # lint specific files
  */
 
-import { glob } from "node:fs/promises";
+import { readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { lint, readConfig } from "markdownlint/promise";
@@ -21,18 +21,31 @@ const repoRoot = path.resolve(
 );
 const configFile = path.join(repoRoot, ".markdownlint.json");
 
+async function collectMarkdownFiles(dir) {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const files = [];
+  for (const entry of entries) {
+    if (entry.name === ".git" || entry.name === "node_modules") {
+      continue;
+    }
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...(await collectMarkdownFiles(fullPath)));
+      continue;
+    }
+    if (entry.isFile() && entry.name.endsWith(".md")) {
+      files.push(fullPath);
+    }
+  }
+  return files;
+}
+
 // Collect files to lint — either from CLI args or glob all .md files
 let files;
 if (process.argv.length > 2) {
   files = process.argv.slice(2);
 } else {
-  files = [];
-  for await (const f of glob("**/*.md", {
-    cwd: repoRoot,
-    exclude: (p) => p === "node_modules" || p === ".git",
-  })) {
-    files.push(path.resolve(repoRoot, f));
-  }
+  files = await collectMarkdownFiles(repoRoot);
 }
 
 if (files.length === 0) {

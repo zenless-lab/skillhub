@@ -21,7 +21,7 @@
  */
 
 import { readFileSync } from "node:fs";
-import { glob } from "node:fs/promises";
+import { readdir, stat } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
@@ -119,8 +119,21 @@ if (args.length > 0) {
   paths = args.filter((p) => path.basename(p) === "SKILL.md");
 } else {
   paths = [];
-  for await (const f of glob("skills/*/SKILL.md", { cwd: repoRoot })) {
-    paths.push(path.resolve(repoRoot, f));
+  const skillsRoot = path.join(repoRoot, "skills");
+  const entries = await readdir(skillsRoot, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isDirectory()) {
+      continue;
+    }
+    const candidate = path.join(skillsRoot, entry.name, "SKILL.md");
+    try {
+      const fileStat = await stat(candidate);
+      if (fileStat.isFile()) {
+        paths.push(candidate);
+      }
+    } catch {
+      // Skip skills without SKILL.md
+    }
   }
   paths.sort();
 }

@@ -37,13 +37,13 @@ repos:
       - id: lint-markdown
         name: Markdown lint
         entry: node scripts/lint_markdown.mjs
-        language: node
+        language: system
         types: [markdown]
         pass_filenames: true
 
       - id: check-skill-metadata
         name: Validate SKILL.md metadata and length
         entry: node scripts/check_skill_meta.mjs
-        language: node
+        language: system
         files: ^skills/.*/SKILL\.md$
         pass_filenames: true
