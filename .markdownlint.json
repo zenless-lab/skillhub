@@ -1,0 +1,18 @@
+{
+    "default": true,
+    "MD007": {
+        "indent": 2
+    },
+    "MD013": false,
+    "MD022": false,
+    "MD033": {
+        "allowed_elements": [
+            "sub",
+            "sup",
+            "br",
+            "details",
+            "summary"
+        ]
+    },
+    "MD041": false
+}

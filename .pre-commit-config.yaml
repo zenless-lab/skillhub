@@ -30,4 +30,20 @@ repos:
     rev: v8.24.2
     hooks:
       - id: gitleaks
-        name: secret scanning with gitleaks
+        name: secret scanning and PII detection with gitleaks
+
+  - repo: local
+    hooks:
+      - id: lint-markdown
+        name: Markdown lint
+        entry: node scripts/lint_markdown.mjs
+        language: system
+        types: [markdown]
+        pass_filenames: true
+
+      - id: check-skill-metadata
+        name: Validate SKILL.md metadata and length
+        entry: node scripts/check_skill_meta.mjs
+        language: system
+        files: ^skills/.*/SKILL\.md$
+        pass_filenames: true
