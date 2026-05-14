@@ -1,0 +1,13 @@
+{
+  "name": "skillhub",
+  "private": true,
+  "description": "Dev tooling dependencies for skillhub CI scripts",
+  "scripts": {
+    "lint:md": "node scripts/lint_markdown.mjs",
+    "check:skill-meta": "node scripts/check_skill_meta.mjs"
+  },
+  "devDependencies": {
+    "gray-matter": "4.0.3",
+    "markdownlint": "0.40.0"
+  }
+}

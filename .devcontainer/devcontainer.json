@@ -11,7 +11,7 @@
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers/features/python:1": {
-			"toolsToInstall": "pre-commit"
+			"toolsToInstall": "pre-commit,rust-just"
 		}
 	},
 	"customizations": {
@@ -22,8 +22,9 @@
 			],
 			"mcp": {
 				"servers": {
-					"hf-mcp-server": {
-					"url": "https://huggingface.co/mcp?login"
+					"skills-spec": {
+						"url": "https://agentskills.io/mcp",
+						"type": "sse"
 					}
 				}
 			}

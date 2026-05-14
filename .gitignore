@@ -1,0 +1,5 @@
+# Node.js
+node_modules/
+
+# Local tool binaries (installed by `just install-dev`)
+.tools/
