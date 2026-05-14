@@ -7,7 +7,7 @@
  * Checks each skills/<name>/SKILL.md file for:
  * - YAML front matter presence (--- delimiters)
  * - Required fields: name, description
- * - description length: warning >512 chars, warning >768 chars, error >1024 chars
+ * - description length: warning >512 chars, stronger warning >768 chars, error >1024 chars
  * - compatibility length: warning >500 chars
  * - File line count: warning >500 lines, stronger warning >1000 lines
  *

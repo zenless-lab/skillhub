@@ -37,8 +37,7 @@ skillhub/
 ├── .gitleaks.toml           # PII and secret detection rules
 ├── .markdownlint.json       # Markdown lint rules
 ├── ruff.toml                # Python lint configuration
-├── .pre-commit-config.yaml  # Pre-commit hook definitions
-└── skills-lock.json         # Dependency lock file for installed skills
+└── .pre-commit-config.yaml  # Pre-commit hook definitions
 ```
 
 ## Skill Structure Convention
