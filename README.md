@@ -118,7 +118,7 @@ Contributions are welcome! Suggested flow:
 3. Run `pre-commit run --all-files`
 4. Open a pull request with a clear summary and rationale
 
-*If you are creating a new skill, use the custom agent definition in `.github/agents/agents-crafter.agent.md` as a structural reference.*
+_If you are creating a new skill, use the custom agent definition in `.github/agents/agents-crafter.agent.md` as a structural reference._
 
 ## 📄 License
 

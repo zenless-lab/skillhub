@@ -11,7 +11,8 @@
             "sup",
             "br",
             "details",
-            "summary"
+            "summary",
+            "div"
         ]
     },
     "MD041": false
