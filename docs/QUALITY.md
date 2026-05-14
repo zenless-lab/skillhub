@@ -50,7 +50,7 @@ Configuration: [`.markdownlint.json`](../.markdownlint.json) at the repository r
 | Unordered list indent (`MD007`) | 2 spaces |
 | Inline HTML (`MD033`) | Allowed: `<sub>`, `<sup>`, `<br>`, `<details>`, `<summary>` |
 
-Run `just lint-markdown` or `npm run lint:md` to check.
+Run `just lint-markdown` or `npm run lint:md` to check. Run `just fix-markdown` or `npm run fix:md` to auto-fix.
 
 ## Python Standards
 

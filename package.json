@@ -4,6 +4,7 @@
   "description": "Dev tooling dependencies for skillhub CI scripts",
   "scripts": {
     "lint:md": "node scripts/lint_markdown.mjs",
+    "fix:md": "node scripts/lint_markdown.mjs --fix",
     "check:skill-meta": "node scripts/check_skill_meta.mjs"
   },
   "devDependencies": {

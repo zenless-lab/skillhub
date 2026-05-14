@@ -12,6 +12,10 @@ install-dev: _install-node-deps _install-python-deps
 lint-markdown *files:
     npm run lint:md -- {{files}}
 
+# Lint and auto-fix Markdown files; pass file paths as extra args (or none to fix all)
+fix-markdown *files:
+    npm run fix:md -- {{files}}
+
 # Lint and auto-fix Python files with ruff
 lint-python *args:
     ruff check {{args}}
