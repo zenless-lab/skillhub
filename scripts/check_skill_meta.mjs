@@ -131,7 +131,10 @@ if (args.length > 0) {
       if (fileStat.isFile()) {
         paths.push(candidate);
       }
-    } catch {
+    } catch (error) {
+      if (error?.code !== "ENOENT") {
+        throw error;
+      }
       // Skip skills without SKILL.md
     }
   }
